@@ -8,13 +8,13 @@ const Skills = () => {
     <div className="p-4">
       <div className="flex flex-col md:flex-row items-center justify-center">
         <SkillCard
-          imageSrc="/img/adobe-xd.jpg"
+          imageSrc="/img/os-install.jpg"
           altText="OS Installation"
           title="OS Installation"
           description="In this activity, we learned how to perform operating system installations, focusing on different types and versions of the Windows operating system using Oracle VirtualBox."
         />
         <SkillCard
-          imageSrc="/img/adobe-xd.jpg"
+          imageSrc="/img/virtual-box.jpg"
           altText="Virtual Box"
           title="Virtual Box"
           description="VirtualBox allows us to create virtual machines and install operating systems in an isolated environment without affecting our host computer's system."
