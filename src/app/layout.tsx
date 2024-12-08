@@ -10,8 +10,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Public Awareness on Intellectual Property",
-  description: " E-Portfolio about Public Awareness on Intellectual Property",
+  title: "Imarie Macaraig Portfolio",
+  description: " E-Portfolio of Imarie Macaraig",
 };
 
 export default function RootLayout({

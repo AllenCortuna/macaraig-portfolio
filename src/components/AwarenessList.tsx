@@ -10,58 +10,34 @@ interface AwarenessListItem {
 
 const awarenessListData: AwarenessListItem[] = [
   {
-    title: 'Types of Intellectual Property',
+    title: 'Programming',
     description:
-      'Understanding the various forms of IP, such as patents, copyrights, trademarks, designs, and trade secrets.',
-    logo: 'https://images.pexels.com/photos/25630343/pexels-photo-25630343/free-photo-of-digital-3d-model-of-a-mechanical-component.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'Ability to write and debug code in languages like Python, Java and other compiled languages. Familiarity with data structures and algorithms.',
+    logo: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nfGVufDB8fDB8fHww',
   },
   {
-    title: 'Duration of Protection',
+    title: 'Database Management',
     description:
-      'Awareness of the length of protection granted for different types of IP. For instance, patents last for 20 years in South Africa, while copyright for computer programs lasts for 50 years.',
-    logo: 'https://images.pexels.com/photos/211151/pexels-photo-211151.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'Knowledge of storing, retrieving, and managing data using SQL or SQLite. Familiarity with database design and optimization.',
+    logo: 'https://media.istockphoto.com/id/1710820813/photo/shot-of-data-center-with-multiple-rows-of-fully-operational-server-racks-modern.webp?a=1&b=1&s=612x612&w=0&k=20&c=vwb9Pk9wj0v3Hxjzrow44WB84oo8fJeoqoC17pS8eCs=',
   },
   {
-    title: 'Copyright and Licensing',
+    title: 'Problem-Solving',
     description:
-      'Knowing that copyright prevents others from copying original works without permission, and that software is typically licensed rather than sold.',
-    logo: 'https://images.pexels.com/photos/15752372/pexels-photo-15752372/free-photo-of-camera-menu-on-screen.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'Logical thinking to identify and resolve technical challenges effectively. Ability to break down complex problems into smaller, solvable parts.',
+    logo: 'https://plus.unsplash.com/premium_photo-1695185954894-e9382c6f4da8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvYmxlbSUyMHNvbHZpbmd8ZW58MHx8MHx8fDA%3D',
   },
   {
-    title: 'Trademarks and Domain Names',
+    title: 'Networking Basics',
     description:
-      'Recognizing that trademarks distinguish goods and services and can be registered for perpetually renewable periods of 10 years. Also, being aware of the implications of cybersquatting, where domain names are registered in bad faith.',
-    logo: 'https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    title: 'Open Source and Free Software',
-    description:
-      'Understanding the concepts of open source and free software, including the rights to use, study, modify, and share software.',
-    logo: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    title: 'Trade Secrets',
-    description:
-      'Awareness of laws governing trade secrets, which allow companies to keep certain information confidential to maintain a competitive edge.',
-    logo: 'https://images.pexels.com/photos/50987/money-card-business-credit-card-50987.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    title: 'Ethical Considerations',
-    description:
-      'Recognizing the ethical implications of IP rights in the digital era and how they can be used to stifle creativity and innovation.',
-    logo: 'https://images.pexels.com/photos/6077181/pexels-photo-6077181.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    title: 'Regulatory Issues',
-    description:
-      'Being informed about the regulatory frameworks surrounding IP protection and the existing gaps or grey areas in the law',
-    logo: 'https://images.pexels.com/photos/12324202/pexels-photo-12324202.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'Understanding of computer networks, IP addresses, and internet protocols. Ability to configure and troubleshoot network connections.',
+    logo: 'https://plus.unsplash.com/premium_photo-1682145728214-dbd62535af3f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXIlMjBuZXR3b3JrfGVufDB8fDB8fHww',
   },
 ];
 
 const AwarenessList: React.FC = () => {
   return (
-    <div className="max-w-sm mx-auto pb-10">
+    <div className="max-w-4xl gap-5 grid grid-cols-1 md:grid-cols-2 mx-auto pb-10">
       {awarenessListData.map((item, index) => (
         <AwarenessListItemComponent key={index} item={item} index={index} />
       ))}
